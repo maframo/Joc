@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Punch Left.gd" type="Script" id=1]
+[ext_resource path="res://Spritesheet/L.Punch_sense____.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Punch"
+length = 0.6
+step = 0.2
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CollisionPolygon2D:polygon")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ PoolVector2Array( 371.3, 370, 529, 370, 463.45, 153.4, 475.8, 139.15, 497.65, 169.55, 505.25, 167.65, 531.85, 115.4, 529.95, 87.85, 514.75, 81.2, 505.25, 87.85, 505.25, 109.7, 510, 113.5, 505.25, 122.05, 491.95, 99.25, 487.2, 85, 475.8, 82.15, 494.8, 56.5, 494.8, 44.15, 467.25, 25.15, 453.95, 28, 441.6, 40.35, 433.05, 49.85, 391.25, 47, 383.65, 56.5, 383.65, 119.2, 400.75, 146.75, 400.75, 167.65, 388.4, 182.85, 387.45, 203.75, 380.8, 225.6, 373.2, 253.15 ), PoolVector2Array( 371.3, 370, 529, 370, 463.45, 153.4, 475.8, 139.15, 489.1, 127.75, 491.95, 120.15, 551.8, 119.2, 589.8, 118.25, 601.2, 105.9, 600.25, 90.7, 579.35, 86.9, 539.45, 88.8, 515.7, 85, 505.25, 82.15, 498.6, 77.4, 487.2, 73.6, 498.6, 54.6, 500.5, 42.25, 467.25, 25.15, 453.95, 28, 441.6, 40.35, 433.05, 49.85, 391.25, 47, 383.65, 56.5, 383.65, 119.2, 400.75, 146.75, 400.75, 167.65, 388.4, 182.85, 387.45, 203.75, 380.8, 225.6, 373.2, 253.15 ), PoolVector2Array( 371.3, 370, 529, 370, 463.45, 153.4, 475.8, 139.15, 491, 160.05, 500.5, 171.45, 518.55, 145.8, 530.9, 124.9, 531.85, 101.15, 528.05, 84.05, 507.15, 87.85, 506.2, 107.8, 497.65, 113.5, 490.05, 93.55, 477.7, 81.2, 487.2, 73.6, 498.6, 54.6, 500.5, 42.25, 467.25, 25.15, 453.95, 28, 441.6, 40.35, 433.05, 49.85, 391.25, 47, 383.65, 56.5, 383.65, 119.2, 400.75, 146.75, 400.75, 167.65, 388.4, 182.85, 387.45, 203.75, 380.8, 225.6, 373.2, 253.15 ) ]
+}
+
+[node name="Punch Left" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 515, 200 )
+texture = ExtResource( 2 )
+hframes = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+playback_speed = 2.0
+anims/Punch = SubResource( 1 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PoolVector2Array( 371.3, 370, 529, 370, 463.45, 153.4, 475.8, 139.15, 497.65, 169.55, 505.25, 167.65, 531.85, 115.4, 529.95, 87.85, 514.75, 81.2, 505.25, 87.85, 505.25, 109.7, 510, 113.5, 505.25, 122.05, 491.95, 99.25, 487.2, 85, 475.8, 82.15, 494.8, 56.5, 494.8, 44.15, 467.25, 25.15, 453.95, 28, 441.6, 40.35, 433.05, 49.85, 391.25, 47, 383.65, 56.5, 383.65, 119.2, 400.75, 146.75, 400.75, 167.65, 388.4, 182.85, 387.45, 203.75, 380.8, 225.6, 373.2, 253.15 )
+
