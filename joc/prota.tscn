@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://felipito.jpg" type="Texture" id=1]
+[ext_resource path="res://prota.gd" type="Script" id=2]
+[ext_resource path="res://tt.jpg" type="Texture" id=3]
+[ext_resource path="res://Sprite.gd" type="Script" id=4]
+
+[node name="coca" type="Sprite"]
+position = Vector2( 207.839, 171.88 )
+scale = Vector2( 0.356107, 0.378253 )
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="albertito" type="Sprite" parent="."]
+position = Vector2( 1291.63, 643.373 )
+scale = Vector2( 0.742388, 0.751405 )
+texture = ExtResource( 3 )
+script = ExtResource( 4 )
+

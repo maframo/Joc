@@ -15,16 +15,17 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Street Fighter"
-run/main_scene="res://Scenes/Health Bar.tscn"
+config/name="politic_fighter"
 config/icon="res://icon.png"
 
-[display]
+[input]
 
-window/size/width=1280
-window/size/height=720
+ui_accept={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":32,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [rendering]
 
-environment/default_clear_color=Color( 0.14902, 0.192157, 0.219608, 1 )
 environment/default_environment="res://default_env.tres"
