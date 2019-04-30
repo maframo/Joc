@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Assets/Main Menu/Font_1.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Assets/Main Menu/Font.tres" type="DynamicFont" id=1]
 
 [node name="MenuButton" type="Button"]
 margin_right = 1040.0
@@ -17,6 +17,7 @@ custom_fonts/font = ExtResource( 1 )
 custom_colors/font_color_shadow = Color( 0.737255, 0.678431, 0.054902, 1 )
 custom_constants/shadow_offset_x = 0
 custom_constants/shadow_offset_y = 5
-text = "Label
+text = "LABEL
+
 "
 

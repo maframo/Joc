@@ -4,6 +4,8 @@
 [ext_resource path="res://Scripts/Main Menu/NewGame_DEFINITIU_b.gd" type="Script" id=2]
 
 [node name="NewGame" instance=ExtResource( 1 )]
+anchor_right = 1.0
+margin_right = -240.0
 script = ExtResource( 2 )
 
 [node name="Label" parent="." index="0"]

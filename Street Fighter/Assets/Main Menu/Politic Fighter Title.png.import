@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Foto.png-57d2649a6e74baa40713a605207a4835.stex"
+path="res://.import/Politic Fighter Title.png-9b7ea4ba5b6f0206f5670d252b76d49b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Main Menu/Foto.png"
-dest_files=[ "res://.import/Foto.png-57d2649a6e74baa40713a605207a4835.stex" ]
+source_file="res://Assets/Main Menu/Politic Fighter Title.png"
+dest_files=[ "res://.import/Politic Fighter Title.png-9b7ea4ba5b6f0206f5670d252b76d49b.stex" ]
 
 [params]
 

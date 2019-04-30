@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/arcade-font-writer.png-2e7a3c67cba82610f7861fc305fa813d.stex"
+path="res://.import/Cepeda.jpg-c879266ef38acc84334fd21fd53a7f31.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Main Menu/arcade-font-writer.png"
-dest_files=[ "res://.import/arcade-font-writer.png-2e7a3c67cba82610f7861fc305fa813d.stex" ]
+source_file="res://Assets/Main Menu/Cepeda.jpg"
+dest_files=[ "res://.import/Cepeda.jpg-c879266ef38acc84334fd21fd53a7f31.stex" ]
 
 [params]
 

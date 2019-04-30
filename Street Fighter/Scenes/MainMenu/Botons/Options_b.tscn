@@ -4,11 +4,14 @@
 [ext_resource path="res://Scripts/Main Menu/Options_b.gd" type="Script" id=2]
 
 [node name="Options" instance=ExtResource( 1 )]
+text = ""
 script = ExtResource( 2 )
 
 [node name="Label" parent="." index="0"]
-margin_bottom = 53.0
-text = "Options
+margin_top = -1.80499
+margin_bottom = 51.195
+custom_colors/font_color_shadow = Color( 0.94902, 0.807843, 0.0392157, 1 )
+text = "options
 "
 
 [connection signal="pressed" from="." to="." method="_on_Options_pressed"]
