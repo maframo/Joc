@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DwJOqIRXcAAM1gT.jpg-cc651a4ef919bc9dc1bd17678b17304d.stex"
+path="res://.import/DwJOqIRXcAAM1gT.jpg-63595493d09ac1de34e561a64c76ae51.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Imatges/Pantalla Inici/DwJOqIRXcAAM1gT.jpg"
-dest_files=[ "res://.import/DwJOqIRXcAAM1gT.jpg-cc651a4ef919bc9dc1bd17678b17304d.stex" ]
+source_file="res://Assets/Pantalla Inici/DwJOqIRXcAAM1gT.jpg"
+dest_files=[ "res://.import/DwJOqIRXcAAM1gT.jpg-63595493d09ac1de34e561a64c76ae51.stex" ]
 
 [params]
 
