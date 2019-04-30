@@ -36,6 +36,7 @@ custom_constants/separation = 10
 alignment = 1
 
 [node name="NewGame" parent="Menu/Centre/Botons " instance=ExtResource( 3 )]
+anchor_right = 0.0
 margin_top = 155.0
 margin_right = 518.0
 margin_bottom = 215.0
@@ -45,7 +46,6 @@ text = ""
 margin_top = 225.0
 margin_right = 518.0
 margin_bottom = 285.0
-text = ""
 
 [node name="Dibuix" type="CenterContainer" parent="Menu/Centre"]
 margin_left = 522.0
