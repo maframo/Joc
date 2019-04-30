@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cebri_un_xic_cutre.PNG-3afba0603f2c2986d431e30e2847f406.stex"
+path="res://.import/cebri_un_xic_cutre.PNG-f59db23ac400d120416b931e598c3e38.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Imatges/Pantalla Inici/cebri_un_xic_cutre.PNG"
-dest_files=[ "res://.import/cebri_un_xic_cutre.PNG-3afba0603f2c2986d431e30e2847f406.stex" ]
+source_file="res://Assets/Pantalla Inici/cebri_un_xic_cutre.PNG"
+dest_files=[ "res://.import/cebri_un_xic_cutre.PNG-f59db23ac400d120416b931e598c3e38.stex" ]
 
 [params]
 
