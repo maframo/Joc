@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 var velocitat = Vector2()
-export var gravetat = Vector2(0,2.8)
+export var gravetat = Vector2(0,10.8)
 var velocitat_maxima = 200
 var saltar = Vector2(0,-400)
 var pegant = false
