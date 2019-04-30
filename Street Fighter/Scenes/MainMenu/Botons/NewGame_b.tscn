@@ -1,11 +1,13 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Scenes/Font_1.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Assets/Main Menu/Font_1.tres" type="DynamicFont" id=1]
 
 [node name="MenuButton" type="Button"]
 margin_right = 1040.0
 margin_bottom = 20.0
 rect_min_size = Vector2( 360, 60 )
+custom_fonts/font = ExtResource( 1 )
+text = "LABEL"
 flat = true
 
 [node name="Label" type="Label" parent="."]

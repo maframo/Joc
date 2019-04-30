@@ -1,18 +1,14 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Scenes/MainMenu.gd" type="Script" id=1]
-[ext_resource path="res://Imatges/Pantalla Inici/Foto.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Main Menu/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Main Menu/Foto.png" type="Texture" id=2]
 [ext_resource path="res://Scenes/MainMenu/Botons/NewGame_DEFINITIU_b.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/MainMenu/Botons/Options_b.tscn" type="PackedScene" id=4]
 
 [node name="Pantalla Inici" type="Control"]
-editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Menu" type="VBoxContainer" parent="."]
 margin_left = 120.0
@@ -43,11 +39,13 @@ alignment = 1
 margin_top = 155.0
 margin_right = 518.0
 margin_bottom = 215.0
+text = ""
 
 [node name="Options" parent="Menu/Centre/Botons " instance=ExtResource( 4 )]
 margin_top = 225.0
 margin_right = 518.0
 margin_bottom = 285.0
+text = ""
 
 [node name="Dibuix" type="CenterContainer" parent="Menu/Centre"]
 margin_left = 522.0

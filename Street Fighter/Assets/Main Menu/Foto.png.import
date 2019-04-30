@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/arcade-font-writer.png-c032699748813ffada9bace19cf66924.stex"
+path="res://.import/Foto.png-57d2649a6e74baa40713a605207a4835.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pantalla Inici/arcade-font-writer.png"
-dest_files=[ "res://.import/arcade-font-writer.png-c032699748813ffada9bace19cf66924.stex" ]
+source_file="res://Assets/Main Menu/Foto.png"
+dest_files=[ "res://.import/Foto.png-57d2649a6e74baa40713a605207a4835.stex" ]
 
 [params]
 
