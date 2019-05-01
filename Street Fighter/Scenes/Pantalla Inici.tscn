@@ -2,11 +2,10 @@
 
 [ext_resource path="res://Scripts/Main Menu/MainMenu.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Main Menu/Politic Fighter Title.png" type="Texture" id=2]
-[ext_resource path="res://Scenes/MainMenu/Botons/NewGame_DEFINITIU_b.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/MainMenu/Botons/NewGame_b.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Scenes/MainMenu/Botons/Options_b.tscn" type="PackedScene" id=4]
 
 [node name="Pantalla Inici" type="Control"]
-editor/display_folded = true
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
@@ -36,19 +35,18 @@ margin_right = 518.0
 margin_bottom = 441.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_constants/separation = 10
+custom_constants/separation = 30
 alignment = 1
 
-[node name="NewGame" parent="Menu/Centre/Botons " instance=ExtResource( 3 )]
-anchor_right = 0.0
-margin_top = 155.0
-margin_right = 518.0
-margin_bottom = 215.0
+[node name="Button" parent="Menu/Centre/Botons " instance=ExtResource( 3 )]
+margin_top = 145.0
+margin_bottom = 205.0
+rect_min_size = Vector2( 360, 60 )
 
 [node name="Options" parent="Menu/Centre/Botons " instance=ExtResource( 4 )]
-margin_top = 225.0
-margin_right = 518.0
-margin_bottom = 285.0
+margin_top = 235.0
+margin_bottom = 295.0
+rect_min_size = Vector2( 360, 60 )
 
 [node name="Dibuix" type="CenterContainer" parent="Menu/Centre"]
 margin_left = 522.0
@@ -63,6 +61,3 @@ margin_top = 220.0
 margin_right = 259.0
 margin_bottom = 220.0
 
-[connection signal="pressed" from="Menu/Centre/Botons /NewGame" to="." method="_on_NewGame_pressed"]
-
-[editable path="Menu/Centre/Botons /NewGame"]
