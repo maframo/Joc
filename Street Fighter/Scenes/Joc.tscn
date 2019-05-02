@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/Background.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Health Bar.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Timer.tscn" type="PackedScene" id=3]
 
 [node name="Joc" type="Node2D"]
 
@@ -20,4 +21,11 @@ margin_top = -68.0
 margin_right = 1316.0
 margin_bottom = -68.0
 rect_scale = Vector2( -3.5, 3.5 )
+
+[node name="Timer" parent="." instance=ExtResource( 3 )]
+margin_left = 609.311
+margin_top = 63.0327
+margin_right = 649.311
+margin_bottom = 103.033
+rect_scale = Vector2( 4, 4 )
 
