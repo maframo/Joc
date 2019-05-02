@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/pixil-frame-0-5.png-81e4472fc37f459f6159e9fd02c1d2d1.stex"
+path="res://.import/Health Bar.png-b6b81509e6cea7fd2f729f18af573807.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Health Bar/pixil-frame-0-5.png"
-dest_files=[ "res://.import/pixil-frame-0-5.png-81e4472fc37f459f6159e9fd02c1d2d1.stex" ]
+source_file="res://Assets/Health Bar/Health Bar.png"
+dest_files=[ "res://.import/Health Bar.png-b6b81509e6cea7fd2f729f18af573807.stex" ]
 
 [params]
 
