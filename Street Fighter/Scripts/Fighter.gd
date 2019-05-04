@@ -71,5 +71,5 @@ func hit():
 	
 
 func death():
-	if health == 0:
+	if health <= 0:
 		get_tree().change_scene('res://Scenes/Game Over.tscn')
