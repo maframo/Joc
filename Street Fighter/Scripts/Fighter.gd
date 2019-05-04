@@ -1,42 +1,75 @@
 extends KinematicBody2D
-var velocity
-var speed = 200
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+var velocitat = Vector2()
+export var gravetat = Vector2(0,10.8)
+var velocitat_maxima = 200
+var saltar = Vector2(0,-600)
+var pegant = false
+var health = 100
 
-# Called when the node enters the scene tree for the first time.
+
 func _ready():
-	pass # Replace with function body.
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+	pass
 func _process(delta):
 	move()
 	animate()
+	death()
 	
-		
-
 func move():
-	velocity = Vector2(0,0)
-	if Input.is_action_pressed('ui_right'):
-		velocity.x = 1
-	if Input.is_action_pressed('ui_left'):
-		velocity.x = -1
-	velocity *= speed
-	velocity = move_and_slide(velocity,Vector2(0,-1))
-
-func direction():
-	if velocity.x > 0:
-		$Sprite.flip_h = false
-	if velocity.x < 0:
-		$Sprite.flip_h = true
+	#posar += si es vol que les dos tecles vagin a lhora i vagi en diagonal
+	velocitat.x = 0
+	if Input.is_action_pressed('ui_right') and not Input.is_action_pressed('ui_select'):
+		velocitat.x = velocitat_maxima
+	if Input.is_action_pressed('ui_left') and not Input.is_action_pressed('ui_select'):
+		velocitat.x = -velocitat_maxima
+	if Input.is_action_pressed('ui_up') and is_on_floor():
+		velocitat += saltar
+	if not is_on_floor():
+		velocitat += gravetat
+	velocitat = move_and_slide(velocitat,Vector2(0,-1))
 	
 func animate():
-#	if Input.is_action_just_pressed('ui_select'):
-#		$AnimationPlayer.play("Punch")
-#	if velocity.x != 0 and not $AnimationPlayer.is_playing():
-#		$AnimationPlayer.play("Walk")
-#	if not $AnimationPlayer.is_playing():
-#		$AnimationPlayer.play("Still")
-	pass
+	
+	if velocitat.y < 0:
+		$AnimatedSprite.animation = 'puja_salt'
+	if velocitat.y > 0:
+		$AnimatedSprite.animation = "baixa_salt"
+	if $RayCast2D.is_colliding():
+		$AnimatedSprite.animation = "acaba_salt"
+	
+	if velocitat.x < 0:
+		$AnimatedSprite.flip_h = true
+	if velocitat.x > 0:
+		$AnimatedSprite.flip_h = false
+	
+	if not pegant:
+		if velocitat.x < 0 and is_on_floor():
+			$AnimatedSprite.animation = "camina"
+		elif velocitat.x > 0 and is_on_floor():
+			$AnimatedSprite.animation = "camina"
+		elif velocitat.x == 0 and is_on_floor():
+			$AnimatedSprite.animation = "quiet"
+	
+	if Input.is_action_pressed("ui_accept") and is_on_floor():
+		$AnimatedSprite.animation = "pega_esq"
+		pegant = true
+	
+	if Input.is_action_pressed("kamikami") and is_on_floor():
+		$AnimatedSprite.animation = "kamikami"
+		pegant = true
+		
+	print($AnimatedSprite.animation)
+	
+	
+
+func _on_AnimatedSprite_animation_finished():
+	pegant = false
+	
+func hit():
+	health -= 25
+	get_parent().get_node("Health Bar 1").update_health(health)
+	
+
+func death():
+	if health == 0:
+		get_tree().change_scene('res://Scenes/Game Over.tscn')

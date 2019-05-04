@@ -1,8 +1,8 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Assets/Main Menu/Politic Fighter Title.png" type="Texture" id=1]
-[ext_resource path="res://Scenes/MainMenu/Botons/NewGame_b.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scenes/MainMenu/Botons/Options_b.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Main Menu/Buttons/New Game Button.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Main Menu/Buttons/Options Button.tscn" type="PackedScene" id=3]
 
 [node name="Pantalla Inici" type="Control"]
 anchor_right = 1.0
