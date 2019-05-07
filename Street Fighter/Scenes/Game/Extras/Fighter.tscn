@@ -1,14 +1,14 @@
 [gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://Scripts/Fighter.gd" type="Script" id=1]
-[ext_resource path="res://Assets/animacions provisionals/pegar/esquerra/1.png" type="Texture" id=2]
-[ext_resource path="res://Assets/animacions provisionals/pegar/esquerra/2.png" type="Texture" id=3]
-[ext_resource path="res://Assets/animacions provisionals/salta/normal/2.png" type="Texture" id=4]
-[ext_resource path="res://Assets/animacions/pegar/kamikamika/1.png" type="Texture" id=5]
-[ext_resource path="res://Assets/animacions/pegar/kamikamika/2.png" type="Texture" id=6]
-[ext_resource path="res://Assets/animacions/pegar/kamikamika/3.png" type="Texture" id=7]
-[ext_resource path="res://Assets/animacions/pegar/kamikamika/4.png" type="Texture" id=8]
-[ext_resource path="res://Assets/animacions/pegar/kamikamika/5.png" type="Texture" id=9]
+[ext_resource path="res://Assets/animacions provisionals/salta/normal/2.png" type="Texture" id=2]
+[ext_resource path="res://Assets/animacions/pegar/kamikamika/1.png" type="Texture" id=3]
+[ext_resource path="res://Assets/animacions/pegar/kamikamika/2.png" type="Texture" id=4]
+[ext_resource path="res://Assets/animacions/pegar/kamikamika/3.png" type="Texture" id=5]
+[ext_resource path="res://Assets/animacions/pegar/kamikamika/4.png" type="Texture" id=6]
+[ext_resource path="res://Assets/animacions/pegar/kamikamika/5.png" type="Texture" id=7]
+[ext_resource path="res://Assets/animacions provisionals/pegar/esquerra/1.png" type="Texture" id=8]
+[ext_resource path="res://Assets/animacions provisionals/pegar/esquerra/2.png" type="Texture" id=9]
 [ext_resource path="res://Assets/animacions provisionals/respira/1.png" type="Texture" id=10]
 [ext_resource path="res://Assets/animacions provisionals/respira/2.png" type="Texture" id=11]
 [ext_resource path="res://Assets/animacions provisionals/respira/3.png" type="Texture" id=12]
@@ -23,19 +23,19 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 2 ) ],
-"loop": false,
-"name": "pega_esq",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 4 ) ],
+"frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "acaba_salt",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": false,
 "name": "kamikami",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 8 ) ],
+"loop": false,
+"name": "pega_esq",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ) ],
@@ -48,14 +48,14 @@ animations = [ {
 "name": "camina",
 "speed": 10.0
 }, {
-"frames": [ ExtResource( 4 ), ExtResource( 19 ), ExtResource( 20 ) ],
-"loop": false,
-"name": "puja_salt",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 19 ) ],
 "loop": true,
 "name": "baixa_salt",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 19 ), ExtResource( 20 ) ],
+"loop": false,
+"name": "puja_salt",
 "speed": 5.0
 } ]
 
@@ -70,7 +70,7 @@ script = ExtResource( 1 )
 scale = Vector2( 2, 2 )
 frames = SubResource( 1 )
 animation = "camina"
-frame = 1
+frame = 3
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
