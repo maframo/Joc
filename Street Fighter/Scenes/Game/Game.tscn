@@ -47,7 +47,7 @@ format = 1
 tile_data = PoolIntArray( 655360, 0, 0, 655361, 0, 0, 655362, 0, 0, 655363, 0, 0, 655364, 0, 0, 655365, 0, 0, 655366, 0, 0, 655367, 0, 0, 655368, 0, 0, 655369, 0, 0, 655370, 0, 0, 655371, 0, 0, 655372, 0, 0, 655373, 0, 0, 655374, 0, 0, 655375, 0, 0, 655376, 0, 0, 655377, 0, 0, 655378, 0, 0, 655379, 0, 0 )
 
 [node name="Personatge" parent="." instance=ExtResource( 5 )]
-position = Vector2( 150.045, 352.567 )
+position = Vector2( 445.93, 335.379 )
 
 [node name="Bill blaster" parent="." instance=ExtResource( 6 )]
 position = Vector2( 1000, 1000 )
