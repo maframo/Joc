@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Scripts/Game Over.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Game/Game Over.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Game Over/Game Over.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Game Over/Press key.png" type="Texture" id=3]
+
 
 [node name="Node2D" type="Node2D"]
 position = Vector2( -14.3228, -68.0331 )
