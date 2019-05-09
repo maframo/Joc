@@ -33,23 +33,20 @@ margin_right = 518.0
 margin_bottom = 441.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_constants/separation = 50
+custom_constants/separation = 30
 alignment = 1
 
 [node name="Button" parent="Menu/Centre/Botons " instance=ExtResource( 2 )]
-editor/display_folded = true
-margin_top = 135.0
-margin_bottom = 195.0
+margin_top = 145.0
+margin_bottom = 205.0
 rect_min_size = Vector2( 360, 60 )
 
 [node name="Options" parent="Menu/Centre/Botons " instance=ExtResource( 3 )]
-margin_top = 245.0
-margin_bottom = 305.0
+margin_top = 235.0
+margin_bottom = 295.0
 rect_min_size = Vector2( 360, 60 )
-custom_constants/hseparation = 5
 
 [node name="Dibuix" type="CenterContainer" parent="Menu/Centre"]
-editor/display_folded = true
 margin_left = 522.0
 margin_right = 1040.0
 margin_bottom = 441.0
@@ -62,5 +59,3 @@ margin_top = 220.0
 margin_right = 259.0
 margin_bottom = 220.0
 
-
-[editable path="Menu/Centre/Botons /Button"]
