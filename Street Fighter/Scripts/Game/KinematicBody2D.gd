@@ -38,7 +38,7 @@ func anima():
 			$AnimatedSprite.animation = "voltereta_avall"
 		if $RayCast2D.is_colliding():
 			$AnimatedSprite.animation = "acaba_voltereta"	
-	elif velocitat.y != 0:
+	elif velocitat.y != 0 and not is_on_floor():
 		if velocitat.y < 0:
 			$AnimatedSprite.animation = 'puja_salt'
 		if velocitat.y > 0 and not is_on_floor():
