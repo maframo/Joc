@@ -41,7 +41,7 @@ func anima():
 	elif velocitat.y != 0:
 		if velocitat.y < 0:
 			$AnimatedSprite.animation = 'puja_salt'
-		if velocitat.y > 0:
+		if velocitat.y > 0 and not is_on_floor():
 			$AnimatedSprite.animation = "baixa_salt"
 		if $RayCast2D.is_colliding():
 			$AnimatedSprite.animation = "acaba_salt"
@@ -65,7 +65,7 @@ func anima():
 		$AnimatedSprite.animation = "pega_dret"
 		pegant = true
 
-	elif Input.is_action_pressed("ui_accept") and is_on_floor():
+	elif Input.is_action_pressed("ui_select") and is_on_floor():
 		$AnimatedSprite.animation = "pega_esq"
 		pegant = true
 
